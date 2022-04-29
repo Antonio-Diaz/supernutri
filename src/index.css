@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+}
+
+html {
+  height: stretch;
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: stretch;
+  min-height: -webkit-fill-available;
+  background-color: rgb(250, 241, 230);
+  display: grid;
+  place-content: center;
+}
