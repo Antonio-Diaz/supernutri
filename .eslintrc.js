@@ -17,5 +17,6 @@ module.exports = {
     'comma-dangle': 'off',
     'react/react-in-jsx-scope': 'off',
     camelcase: 'off',
+    'no-unused-vars': ['warn'],
   },
 }
