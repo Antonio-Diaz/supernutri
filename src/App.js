@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux'
 import { projectName } from './config/firebase'
 import { login, register } from './slices/auth'
 import { unSetMessage } from './slices/ui'
+import { Container } from '@mui/material'
+import Login from './components/login'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -30,11 +32,20 @@ const App = () => {
     )
   }
   return (
-    <>
-      <h1>{projectName}</h1>
+    <Container
+      sx={{
+        minHeight: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      {/* <h1>{projectName}</h1>
       <button onClick={handleOnRegister}>register</button>
-      <button onClick={handleOnLogin}>Login</button>
-    </>
+    <button onClick={handleOnLogin}>Login</button> */}
+      <Login />
+    </Container>
   )
 }
 
